@@ -2,10 +2,18 @@
 
 <table>
   <tr>
+    <th>Hostname</th>
+    <th>Building</th>
+    <th>Room</th>
+    <th>Owner</th>
   </tr>
 
 <% @hosts.each do |host| %>
   <tr>
+    <td><%=h host.hostname %></td>
+    <td><%=h host.building %></td>
+    <td><%=h host.room %></td>
+    <td><%=h host.owner %></td>
     <td><%= link_to 'Show', host %></td>
     <td><%= link_to 'Edit', edit_host_path(host) %></td>
     <td><%= link_to 'Destroy', host, :confirm => 'Are you sure?', :method => :delete %></td>

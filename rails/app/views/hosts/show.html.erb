@@ -1,3 +1,23 @@
+<p>
+  <b>Hostname:</b>
+  <%=h @host.hostname %>
+</p>
+
+<p>
+  <b>Building:</b>
+  <%=h @host.building %>
+</p>
+
+<p>
+  <b>Room:</b>
+  <%=h @host.room %>
+</p>
+
+<p>
+  <b>Owner:</b>
+  <%=h @host.owner %>
+</p>
+
 
 <%= link_to 'Edit', edit_host_path(@host) %> |
 <%= link_to 'Back', hosts_path %>

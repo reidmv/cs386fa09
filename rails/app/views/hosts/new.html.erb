@@ -4,6 +4,22 @@
   <%= f.error_messages %>
 
   <p>
+    <%= f.label :hostname %><br />
+    <%= f.text_field :hostname %>
+  </p>
+  <p>
+    <%= f.label :building %><br />
+    <%= f.text_field :building %>
+  </p>
+  <p>
+    <%= f.label :room %><br />
+    <%= f.text_field :room %>
+  </p>
+  <p>
+    <%= f.label :owner %><br />
+    <%= f.text_field :owner %>
+  </p>
+  <p>
     <%= f.submit 'Create' %>
   </p>
 <% end %>

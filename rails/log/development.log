@@ -158,3 +158,325 @@ Processing HostsController#create (for 38.100.210.77 at 2009-11-08 21:33:17) [PO
 Rendering template within layouts/hosts
 Rendering hosts/new
 Completed in 84ms (View: 7, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing Rails::InfoController#properties (for 38.100.210.77 at 2009-11-08 21:49:19) [GET]
+Completed in 145ms (View: 81, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/rails/info/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 38.100.210.77 at 2009-11-08 21:49:27) [GET]
+  [4;36;1mHost Load (2.4ms)[0m   [0;1mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 97ms (View: 39, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#new (for 38.100.210.77 at 2009-11-08 21:58:45) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/new
+Completed in 46ms (View: 25, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 38.100.210.77 at 2009-11-08 22:13:45) [GET]
+
+ActionController::RoutingError (No route matches "/cs386" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 38.100.210.77 at 2009-11-08 22:13:50) [GET]
+
+ActionController::RoutingError (No route matches "/cs386/" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing Rails::InfoController#properties (for 38.100.210.77 at 2009-11-08 22:13:55) [GET]
+Completed in 75ms (View: 11, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/rails/info/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing Rails::InfoController#properties (for 38.100.210.77 at 2009-11-08 22:15:47) [GET]
+Completed in 40ms (View: 3, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/rails/info/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 38.100.210.77 at 2009-11-08 22:16:03) [GET]
+
+ActionController::RoutingError (No route matches "/cs386/" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 38.100.210.77 at 2009-11-08 22:16:07) [GET]
+
+ActionController::RoutingError (No route matches "/netdb" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 38.100.210.77 at 2009-11-08 22:20:21) [GET]
+
+ActionController::RoutingError (No route matches "/netdb" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 38.100.210.77 at 2009-11-08 22:20:26) [GET]
+
+ActionController::RoutingError (No route matches "/cs386" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing Rails::InfoController#properties (for 38.100.210.77 at 2009-11-08 22:21:25) [GET]
+Completed in 146ms (View: 11, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/rails/info/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 38.100.210.77 at 2009-11-08 22:24:23) [GET]
+  [4;36;1mHost Load (2.5ms)[0m   [0;1mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 170ms (View: 39, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#new (for 38.100.210.77 at 2009-11-08 22:24:35) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/new
+Completed in 46ms (View: 25, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 38.100.210.77 at 2009-11-08 22:24:36) [GET]
+  [4;35;1mHost Load (2.4ms)[0m   [0mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 18ms (View: 3, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 38.100.210.77 at 2009-11-08 22:24:37) [GET]
+  [4;36;1mHost Load (2.4ms)[0m   [0;1mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 18ms (View: 3, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing Rails::InfoController#properties (for 38.100.210.77 at 2009-11-08 22:30:56) [GET]
+Completed in 145ms (View: 11, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/rails/info/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostController#index (for 38.100.210.77 at 2009-11-08 22:31:16) [GET]
+Rendering host/index
+Completed in 24ms (View: 21, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/host/index]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 38.100.210.77 at 2009-11-08 22:31:22) [GET]
+
+ActionController::RoutingError (No route matches "/cs386/host/index" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 38.100.210.77 at 2009-11-08 22:38:29) [GET]
+  [4;36;1mHost Load (2.3ms)[0m   [0;1mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 177ms (View: 40, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 38.100.210.77 at 2009-11-08 22:38:32) [GET]
+  [4;35;1mHost Load (2.3ms)[0m   [0mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 18ms (View: 3, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#new (for 38.100.210.77 at 2009-11-08 22:38:34) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/new
+Completed in 46ms (View: 25, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 38.100.210.77 at 2009-11-08 22:38:36) [GET]
+  [4;36;1mHost Load (2.4ms)[0m   [0;1mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 18ms (View: 3, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 38.100.210.77 at 2009-11-08 22:42:12) [GET]
+  [4;35;1mHost Load (2.3ms)[0m   [0mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 44ms (View: 29, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#show (for 38.100.210.77 at 2009-11-08 22:42:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHost Load (1.6ms)[0m   [0;1mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+Completed in 41ms (View: 19, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 38.100.210.77 at 2009-11-08 22:42:58) [GET]
+  [4;35;1mHost Load (2.4ms)[0m   [0mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 48ms (View: 33, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 38.100.210.77 at 2009-11-08 22:43:56) [GET]
+  [4;36;1mHost Load (2.5ms)[0m   [0;1mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 155ms (View: 34, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#edit (for 38.100.210.77 at 2009-11-08 22:44:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHost Load (1.6ms)[0m   [0mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/edit
+Completed in 48ms (View: 26, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/1/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 38.100.210.77 at 2009-11-08 22:44:04) [GET]
+  [4;36;1mHost Load (2.4ms)[0m   [0;1mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 32ms (View: 17, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 38.100.210.77 at 2009-11-08 22:50:21) [GET]
+  [4;36;1mHost Load (2.4ms)[0m   [0;1mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 189ms (View: 57, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#edit (for 38.100.210.77 at 2009-11-08 22:50:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHost Load (1.6ms)[0m   [0mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/edit
+Completed in 53ms (View: 30, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/1/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#update (for 38.100.210.77 at 2009-11-08 22:50:37) [PUT]
+  Parameters: {"authenticity_token"=>"I3FhDiBIOhOq1r8x0vtZuGIIU8dbid5BQ5pIUnQxPok=", "host"=>{"hostname"=>"asterisk.kittenz.pdx.edu", "building"=>"FAB", "room"=>"60-08", "owner"=>"acronym"}, "commit"=>"Update", "id"=>"1"}
+  [4;36;1mHost Load (1.6ms)[0m   [0;1mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mHost Load (2.1ms)[0m   [0;1mSELECT "hosts".id FROM "hosts" WHERE ("hosts"."hostname" = E'asterisk.kittenz.pdx.edu' AND "hosts".id <> 1) LIMIT 1[0m
+  [4;35;1mHost Update (1.0ms)[0m   [0mUPDATE "hosts" SET "owner" = E'acronym' WHERE "id" = 1[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://asterisk.kittenz.pdx.edu:3000/hosts/1
+Completed in 76ms (DB: 6) | 302 Found [http://asterisk.kittenz.pdx.edu/hosts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#show (for 38.100.210.77 at 2009-11-08 22:50:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHost Load (1.7ms)[0m   [0mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+Completed in 46ms (View: 23, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 38.100.210.77 at 2009-11-08 22:50:41) [GET]
+  [4;36;1mHost Load (2.4ms)[0m   [0;1mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 33ms (View: 18, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
