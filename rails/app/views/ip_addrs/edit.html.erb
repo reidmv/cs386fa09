@@ -1,0 +1,16 @@
+<h1>Editing ip_addr</h1>
+
+<% form_for(@ip_addr) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :ip_addr %><br />
+    <%= f.text_field :ip_addr %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @ip_addr %> |
+<%= link_to 'Back', ip_addrs_path %>

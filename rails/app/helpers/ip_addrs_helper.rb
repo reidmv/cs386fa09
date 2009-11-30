@@ -1,0 +1,2 @@
+module IpAddrsHelper
+end

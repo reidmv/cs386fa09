@@ -480,3 +480,379 @@ Processing HostsController#index (for 38.100.210.77 at 2009-11-08 22:50:41) [GET
 Rendering template within layouts/hosts
 Rendering hosts/index
 Completed in 33ms (View: 18, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing Rails::InfoController#properties (for 131.252.209.181 at 2009-11-09 11:00:53) [GET]
+Completed in 203ms (View: 11, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/rails/info/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostController#index (for 131.252.209.181 at 2009-11-09 11:07:48) [GET]
+Rendering host/index
+Completed in 25ms (View: 21, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/host]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 131.252.209.181 at 2009-11-09 11:07:49) [GET]
+  [4;36;1mHost Load (14.9ms)[0m   [0;1mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 169ms (View: 98, DB: 15) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostController#index (for 131.252.209.181 at 2009-11-09 11:09:05) [GET]
+Rendering host/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostController#index (for 131.252.209.181 at 2009-11-09 11:09:06) [GET]
+Rendering host/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 131.252.209.181 at 2009-11-09 11:11:25) [GET]
+  [4;35;1mHost Load (2.4ms)[0m   [0mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 33ms (View: 18, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#edit (for 131.252.209.181 at 2009-11-09 11:11:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHost Load (1.8ms)[0m   [0;1mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/edit
+Completed in 141ms (View: 118, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#update (for 131.252.209.181 at 2009-11-09 11:11:33) [PUT]
+  Parameters: {"authenticity_token"=>"qIYpwbF82MPT/FJzfFyMZBBY7FsLc2IgKRzz6IiuQvo=", "host"=>{"hostname"=>"asterisk.kittenz.pdx.edu", "building"=>"FAB", "room"=>"60-08", "owner"=>"acronym!"}, "commit"=>"Update", "id"=>"1"}
+  [4;35;1mHost Load (1.6ms)[0m   [0mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHost Load (2.3ms)[0m   [0mSELECT "hosts".id FROM "hosts" WHERE ("hosts"."hostname" = E'asterisk.kittenz.pdx.edu' AND "hosts".id <> 1) LIMIT 1[0m
+  [4;36;1mHost Update (1.9ms)[0m   [0;1mUPDATE "hosts" SET "owner" = E'acronym!' WHERE "id" = 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://asterisk.kittenz.pdx.edu:3000/hosts/1
+Completed in 77ms (DB: 7) | 302 Found [http://asterisk.kittenz.pdx.edu/hosts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#show (for 131.252.209.181 at 2009-11-09 11:11:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHost Load (1.6ms)[0m   [0;1mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+Completed in 46ms (View: 23, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#edit (for 131.252.209.181 at 2009-11-09 11:11:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHost Load (1.6ms)[0m   [0mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/edit
+Completed in 36ms (View: 14, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/1/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#update (for 131.252.209.181 at 2009-11-09 11:11:39) [PUT]
+  Parameters: {"authenticity_token"=>"qIYpwbF82MPT/FJzfFyMZBBY7FsLc2IgKRzz6IiuQvo=", "host"=>{"hostname"=>"asterisk.kittenz.pdx.edu", "building"=>"FAB", "room"=>"60-08", "owner"=>"acronym"}, "commit"=>"Update", "id"=>"1"}
+  [4;36;1mHost Load (1.6ms)[0m   [0;1mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mHost Load (2.0ms)[0m   [0;1mSELECT "hosts".id FROM "hosts" WHERE ("hosts"."hostname" = E'asterisk.kittenz.pdx.edu' AND "hosts".id <> 1) LIMIT 1[0m
+  [4;35;1mHost Update (1.0ms)[0m   [0mUPDATE "hosts" SET "owner" = E'acronym' WHERE "id" = 1[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://asterisk.kittenz.pdx.edu:3000/hosts/1
+Completed in 40ms (DB: 6) | 302 Found [http://asterisk.kittenz.pdx.edu/hosts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#show (for 131.252.209.181 at 2009-11-09 11:11:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHost Load (1.6ms)[0m   [0mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+Completed in 31ms (View: 8, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 131.252.209.181 at 2009-11-09 11:11:41) [GET]
+  [4;36;1mHost Load (2.4ms)[0m   [0;1mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 33ms (View: 18, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#show (for 131.252.209.181 at 2009-11-09 11:14:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHost Load (1.6ms)[0m   [0mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+Completed in 32ms (View: 8, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 131.252.209.181 at 2009-11-09 11:14:29) [GET]
+  [4;36;1mHost Load (2.4ms)[0m   [0;1mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 33ms (View: 18, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#show (for 131.252.209.181 at 2009-11-09 11:14:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHost Load (1.6ms)[0m   [0mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+Completed in 31ms (View: 8, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 131.252.209.181 at 2009-11-09 11:14:34) [GET]
+  [4;36;1mHost Load (2.4ms)[0m   [0;1mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 33ms (View: 17, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#new (for 131.252.209.181 at 2009-11-09 13:01:04) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/new
+Completed in 48ms (View: 28, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#create (for 131.252.209.181 at 2009-11-09 13:01:27) [POST]
+  Parameters: {"authenticity_token"=>"qIYpwbF82MPT/FJzfFyMZBBY7FsLc2IgKRzz6IiuQvo=", "host"=>{"hostname"=>"adelie.cs.pdx.edu", "building"=>"FAB", "room"=>"C88-01", "owner"=>"tutors"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mHost Load (2.5ms)[0m   [0;1mSELECT "hosts".id FROM "hosts" WHERE ("hosts"."hostname" = E'adelie.cs.pdx.edu') LIMIT 1[0m
+  [4;35;1mSQL (14.5ms)[0m   [0mINSERT INTO "hosts" ("hostname", "building", "room", "detail", "owner", "model", "os") VALUES(E'adelie.cs.pdx.edu', E'FAB', E'C88-01', NULL, E'tutors', NULL, NULL) RETURNING "id"[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://asterisk.kittenz.pdx.edu:3000/hosts/2
+Completed in 66ms (DB: 19) | 302 Found [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#show (for 131.252.209.181 at 2009-11-09 13:01:27) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mHost Load (1.6ms)[0m   [0mSELECT * FROM "hosts" WHERE ("hosts"."id" = 2) [0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+Completed in 139ms (View: 8, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 131.252.209.181 at 2009-11-09 13:01:30) [GET]
+  [4;36;1mHost Load (2.4ms)[0m   [0;1mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 35ms (View: 19, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostController#index (for 38.100.210.73 at 2009-11-11 15:24:04) [GET]
+Rendering host/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 38.100.210.73 at 2009-11-11 15:24:09) [GET]
+  [4;35;1mHost Load (2.4ms)[0m   [0mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 34ms (View: 19, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#show (for 38.100.210.73 at 2009-11-11 15:59:32) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mHost Load (1.6ms)[0m   [0;1mSELECT * FROM "hosts" WHERE ("hosts"."id" = 2) [0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+Completed in 31ms (View: 8, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/2]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 38.100.210.73 at 2009-11-11 15:59:35) [GET]
+  [4;35;1mHost Load (2.4ms)[0m   [0mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 34ms (View: 19, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostController#index (for 131.252.222.209 at 2009-11-19 15:55:21) [GET]
+Rendering host/index
+Completed in 24ms (View: 21, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 131.252.222.209 at 2009-11-19 15:55:30) [GET]
+  [4;36;1mHost Load (2.4ms)[0m   [0;1mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 215ms (View: 78, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#show (for 131.252.222.209 at 2009-11-19 15:55:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHost Load (1.6ms)[0m   [0mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+Completed in 46ms (View: 23, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#edit (for 131.252.222.209 at 2009-11-19 15:55:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHost Load (1.7ms)[0m   [0;1mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/edit
+Completed in 52ms (View: 30, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#update (for 131.252.222.209 at 2009-11-19 15:55:45) [PUT]
+  Parameters: {"authenticity_token"=>"9jjysxB/UCe8RsHznhhGfJbOBN9GOLhqGP6pg72QNLw=", "host"=>{"hostname"=>"asterisk.kittenz.pdx.edu", "building"=>"FAB", "room"=>"60-08", "owner"=>"acronym2"}, "commit"=>"Update", "id"=>"1"}
+  [4;35;1mHost Load (1.6ms)[0m   [0mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHost Load (2.1ms)[0m   [0mSELECT "hosts".id FROM "hosts" WHERE ("hosts"."hostname" = E'asterisk.kittenz.pdx.edu' AND "hosts".id <> 1) LIMIT 1[0m
+  [4;36;1mHost Update (1.0ms)[0m   [0;1mUPDATE "hosts" SET "owner" = E'acronym2' WHERE "id" = 1[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://asterisk.kittenz.pdx.edu:3000/hosts/1
+Completed in 169ms (DB: 6) | 302 Found [http://asterisk.kittenz.pdx.edu/hosts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#show (for 131.252.222.209 at 2009-11-19 15:55:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHost Load (1.6ms)[0m   [0;1mSELECT * FROM "hosts" WHERE ("hosts"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+Completed in 32ms (View: 8, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 131.252.222.209 at 2009-11-19 15:55:48) [GET]
+  [4;35;1mHost Load (2.4ms)[0m   [0mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 35ms (View: 19, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#new (for 131.252.222.209 at 2009-11-19 15:57:33) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/new
+Completed in 48ms (View: 28, DB: 0) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#create (for 131.252.222.209 at 2009-11-19 15:58:05) [POST]
+  Parameters: {"authenticity_token"=>"9jjysxB/UCe8RsHznhhGfJbOBN9GOLhqGP6pg72QNLw=", "host"=>{"hostname"=>"squiggly.kittenz.pdx.edu", "building"=>"FAB", "room"=>"60-08", "owner"=>"acronym"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHost Load (2.5ms)[0m   [0mSELECT "hosts".id FROM "hosts" WHERE ("hosts"."hostname" = E'squiggly.kittenz.pdx.edu') LIMIT 1[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO "hosts" ("hostname", "building", "room", "detail", "owner", "model", "os") VALUES(E'squiggly.kittenz.pdx.edu', E'FAB', E'60-08', NULL, E'acronym', NULL, NULL) RETURNING "id"[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://asterisk.kittenz.pdx.edu:3000/hosts/3
+Completed in 51ms (DB: 5) | 302 Found [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#show (for 131.252.222.209 at 2009-11-19 15:58:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mHost Load (1.6ms)[0m   [0;1mSELECT * FROM "hosts" WHERE ("hosts"."id" = 3) [0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+Completed in 31ms (View: 8, DB: 2) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts/3]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HostsController#index (for 131.252.222.209 at 2009-11-19 15:58:07) [GET]
+  [4;35;1mHost Load (2.4ms)[0m   [0mSELECT * FROM "hosts" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 36ms (View: 21, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/hosts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing IpAddrsController#index (for 131.252.222.209 at 2009-11-19 15:59:22) [GET]
+  [4;36;1mIpAddr Load (2.5ms)[0m   [0;1mSELECT * FROM "ip_addrs" [0m
+Rendering template within layouts/ip_addrs
+Rendering ip_addrs/index
+Completed in 64ms (View: 40, DB: 3) | 200 OK [http://asterisk.kittenz.pdx.edu/ip_addrs]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing IpAddrsController#new (for 131.252.222.209 at 2009-11-19 15:59:25) [GET]
+Rendering template within layouts/ip_addrs
+Rendering ip_addrs/new
+
+ActionView::TemplateError (undefined method `ip_addr' for #<IpAddr:0xa4e32b4>) on line #8 of app/views/ip_addrs/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :ip_addr %><br />
+8:     <%= f.text_field :ip_addr %>
+9:   </p>
+10:   <p>
+11:     <%= f.submit 'Create' %>
+
+    app/views/ip_addrs/new.html.erb:8:in `block in _run_erb_app47views47ip_addrs47new46html46erb'
+    app/views/ip_addrs/new.html.erb:3
+    app/controllers/ip_addrs_controller.rb:29:in `new'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (323.8ms)
+Rendered rescues/_request_and_response (3.8ms)
+Rendering rescues/layout (internal_server_error)
