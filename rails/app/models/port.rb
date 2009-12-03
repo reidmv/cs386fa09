@@ -6,11 +6,10 @@
 #         BUGS:  ---
 #        NOTES:  ---
 #=============================================================================
-
 class Port < ActiveRecord::Base
 	belongs_to :host
 	has_many   :mac_addrs,
 	           :dependent => :destroy
-	has_many   :ip_addrs,
-	           :through => :mac_addrs
+	has_one    :connection,
+	           :dependent => :destroy
 end

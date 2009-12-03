@@ -1,4 +1,12 @@
+#=============================================================================
+#         FILE:  wiring.rb
+#
+#  DESCRIPTION:  Contains the class definition for the 'wirings' table.
+#
+#         BUGS:  ---
+#        NOTES:  ---
+#=============================================================================
 class Wiring < ActiveRecord::Base
-#	set_primary_key :wiring_id
-	set_table_name  :wiring
+	belongs_to :host
+
 end

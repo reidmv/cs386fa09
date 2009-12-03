@@ -10,8 +10,6 @@ class Host < ActiveRecord::Base
 	has_many :ports,
 	         :dependent   => :destroy,
 	         :foreign_key => 'host_id'
-	has_many :mac_addrs,
-	         :through => :ports
 
 	validates_uniqueness_of :hostname
 	validates_presence_of   :hostname, :building, :room, :owner
